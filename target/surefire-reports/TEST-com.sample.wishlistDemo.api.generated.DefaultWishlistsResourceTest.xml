@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="5" failures="3" name="com.sample.wishlistDemo.api.generated.DefaultWishlistsResourceTest" time="16.041" errors="0" skipped="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/opt/java/jre/lib/amd64"/>
+    <property name="java.vm.version" value="25.91-b14"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="/home/yaas/wishlistDemo"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=":"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/home/yaas/wishlistDemo"/>
+    <property name="java.runtime.version" value="1.8.0_91-b14"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="/opt/java/jre/lib/endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Linux"/>
+    <property name="classworlds.conf" value="/home/yaas/eclipse-workspace/.metadata/.plugins/org.eclipse.m2e.launching/launches/m2conf1073205607853038057.tmp"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="3.13.0-32-generic"/>
+    <property name="user.home" value="/home/yaas"/>
+    <property name="user.timezone" value="America/New_York"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="user.name" value="yaas"/>
+    <property name="java.class.path" value="/home/yaas/.p2/pool/plugins/org.eclipse.m2e.maven.runtime_1.8.2.20171007-0216/jars/plexus-classworlds-2.5.2.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/opt/java/jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B install"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_91"/>
+    <property name="java.ext.dirs" value="/opt/java/jre/lib/ext:/usr/java/packages/lib/ext"/>
+    <property name="securerandom.source" value="file:/dev/./urandom"/>
+    <property name="sun.boot.class.path" value="/opt/java/jre/lib/resources.jar:/opt/java/jre/lib/rt.jar:/opt/java/jre/lib/sunrsasign.jar:/opt/java/jre/lib/jsse.jar:/opt/java/jre/lib/jce.jar:/opt/java/jre/lib/charsets.jar:/opt/java/jre/lib/jfr.jar:/opt/java/jre/classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="/home/yaas/wishlistDemo/EMBEDDED"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="gnome"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase classname="com.sample.wishlistDemo.api.generated.DefaultWishlistsResourceTest" name="testPutByWishlistIdWithWishlist" time="11.776">
+    <failure message="Response does not have expected response code expected:&lt;200&gt; but was:&lt;500&gt;" type="java.lang.AssertionError">java.lang.AssertionError: Response does not have expected response code expected:&lt;200&gt; but was:&lt;500&gt;
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:834)
+	at org.junit.Assert.assertEquals(Assert.java:645)
+	at com.sample.wishlistDemo.api.generated.DefaultWishlistsResourceTest.testPutByWishlistIdWithWishlist(DefaultWishlistsResourceTest.java:77)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</failure>
+    <system-out>00:08:04,234 |-INFO in ch.qos.logback.classic.LoggerContext[yaasLogger] - Could NOT find resource [logback.groovy]
+00:08:04,235 |-INFO in ch.qos.logback.classic.LoggerContext[yaasLogger] - Could NOT find resource [logback-test.xml]
+00:08:04,246 |-INFO in ch.qos.logback.classic.LoggerContext[yaasLogger] - Found resource [logback.xml] at [jar:file:/home/yaas/.m2/repository/com/sap/cloud/yaas/service-sdk/service-sdk-logging/4.12.1/service-sdk-logging-4.12.1.jar!/logback.xml]
+00:08:04,267 |-INFO in ch.qos.logback.core.joran.spi.ConfigurationWatchList@732c2a62 - URL [jar:file:/home/yaas/.m2/repository/com/sap/cloud/yaas/service-sdk/service-sdk-logging/4.12.1/service-sdk-logging-4.12.1.jar!/logback.xml] is not of type file
+00:08:04,391 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - debug attribute not set
+00:08:04,398 |-INFO in ch.qos.logback.core.joran.util.ConfigurationWatchListUtil@272ed83b - Adding [jar:file:/home/yaas/.m2/repository/com/sap/cloud/yaas/service-sdk/service-sdk-logging/4.12.1/service-sdk-logging-4.12.1.jar!/logback-include-setup.xml] to configuration watch list.
+00:08:04,398 |-INFO in ch.qos.logback.core.joran.spi.ConfigurationWatchList@732c2a62 - URL [jar:file:/home/yaas/.m2/repository/com/sap/cloud/yaas/service-sdk/service-sdk-logging/4.12.1/service-sdk-logging-4.12.1.jar!/logback-include-setup.xml] is not of type file
+00:08:04,402 |-INFO in ch.qos.logback.classic.joran.action.ContextNameAction - Setting logger context name as [yaasLogger]
+00:08:04,403 |-INFO in ch.qos.logback.classic.joran.action.LoggerContextListenerAction - Adding LoggerContextListener of type [ch.qos.logback.classic.jul.LevelChangePropagator] to the object stack
+00:08:04,403 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@41fecb8b - Propagating DEBUG level on Logger[ROOT] onto the JUL framework
+00:08:04,403 |-INFO in ch.qos.logback.classic.joran.action.LoggerContextListenerAction - Starting LoggerContextListener
+00:08:04,404 |-INFO in ch.qos.logback.core.joran.action.StatusListenerAction - Added status listener of type [ch.qos.logback.core.status.OnConsoleStatusListener]
+00:08:04,449 |-INFO in ch.qos.logback.core.joran.util.ConfigurationWatchListUtil@272ed83b - Adding [jar:file:/home/yaas/.m2/repository/com/sap/cloud/yaas/service-sdk/service-sdk-logging/4.12.1/service-sdk-logging-4.12.1.jar!/logback-include-appenders.xml] to configuration watch list.
+00:08:04,455 |-INFO in ch.qos.logback.core.joran.spi.ConfigurationWatchList@732c2a62 - URL [jar:file:/home/yaas/.m2/repository/com/sap/cloud/yaas/service-sdk/service-sdk-logging/4.12.1/service-sdk-logging-4.12.1.jar!/logback-include-appenders.xml] is not of type file
+00:08:05,499 |-INFO in ch.qos.logback.core.joran.util.ConfigurationWatchListUtil@272ed83b - Adding [jar:file:/home/yaas/.m2/repository/com/sap/cloud/yaas/service-sdk/service-sdk-logging/4.12.1/service-sdk-logging-4.12.1.jar!/logback-include-appender-plain.xml] to configuration watch list.
+00:08:05,500 |-INFO in ch.qos.logback.core.joran.spi.ConfigurationWatchList@732c2a62 - URL [jar:file:/home/yaas/.m2/repository/com/sap/cloud/yaas/service-sdk/service-sdk-logging/4.12.1/service-sdk-logging-4.12.1.jar!/logback-include-appender-plain.xml] is not of type file
+00:08:05,506 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - About to instantiate appender of type [com.sap.cloud.yaas.servicesdk.logging.JansiAwareConsoleAppender]
+00:08:05,527 |-INFO in ch.qos.logback.core.joran.action.AppenderAction - Naming appender as [STDOUT]
+00:08:05,826 |-INFO in ch.qos.logback.core.joran.util.ConfigurationWatchListUtil@272ed83b - Adding [jar:file:/home/yaas/.m2/repository/com/sap/cloud/yaas/service-sdk/service-sdk-logging/4.12.1/service-sdk-logging-4.12.1.jar!/logback-include-loggers.xml] to configuration watch list.
+00:08:05,845 |-INFO in ch.qos.logback.core.joran.spi.ConfigurationWatchList@732c2a62 - URL [jar:file:/home/yaas/.m2/repository/com/sap/cloud/yaas/service-sdk/service-sdk-logging/4.12.1/service-sdk-logging-4.12.1.jar!/logback-include-loggers.xml] is not of type file
+00:08:05,853 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [com.sap.cloud.yaas] to INFO
+00:08:05,860 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@41fecb8b - Propagating INFO level on Logger[com.sap.cloud.yaas] onto the JUL framework
+00:08:05,860 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [com.hybris] to INFO
+00:08:05,860 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@41fecb8b - Propagating INFO level on Logger[com.hybris] onto the JUL framework
+00:08:05,862 |-INFO in ch.qos.logback.core.joran.util.ConfigurationWatchListUtil@272ed83b - Adding [file:/home/yaas/wishlistDemo/target/classes/logback-include-custom.xml] to configuration watch list.
+00:08:05,878 |-INFO in ch.qos.logback.classic.joran.action.LoggerAction - Setting level of logger [com.sample.wishlistDemo] to DEBUG
+00:08:05,878 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@41fecb8b - Propagating DEBUG level on Logger[com.sample.wishlistDemo] onto the JUL framework
+00:08:05,879 |-INFO in ch.qos.logback.core.joran.util.ConfigurationWatchListUtil@272ed83b - Adding [jar:file:/home/yaas/.m2/repository/com/sap/cloud/yaas/service-sdk/service-sdk-logging/4.12.1/service-sdk-logging-4.12.1.jar!/logback-include-root.xml] to configuration watch list.
+00:08:05,891 |-INFO in ch.qos.logback.core.joran.spi.ConfigurationWatchList@732c2a62 - URL [jar:file:/home/yaas/.m2/repository/com/sap/cloud/yaas/service-sdk/service-sdk-logging/4.12.1/service-sdk-logging-4.12.1.jar!/logback-include-root.xml] is not of type file
+00:08:05,902 |-INFO in ch.qos.logback.classic.joran.action.RootLoggerAction - Setting level of ROOT logger to WARN
+00:08:05,913 |-INFO in ch.qos.logback.classic.jul.LevelChangePropagator@41fecb8b - Propagating WARN level on Logger[ROOT] onto the JUL framework
+00:08:05,914 |-INFO in ch.qos.logback.core.joran.action.AppenderRefAction - Attaching appender named [STDOUT] to Logger[ROOT]
+00:08:05,914 |-INFO in ch.qos.logback.classic.joran.action.ConfigurationAction - End of configuration.
+00:08:05,927 |-INFO in ch.qos.logback.classic.joran.JoranConfigurator@7d9f158f - Registering current configuration as safe fallback point
+</system-out>
+    <system-err>Dec 17, 2017 12:08:03 AM org.glassfish.jersey.test.grizzly.GrizzlyTestContainerFactory$GrizzlyTestContainer &lt;init&gt;
+INFO: Creating GrizzlyTestContainer configured at the base URI http://localhost:9998/
+Dec 17, 2017 12:08:12 AM org.glassfish.jersey.filter.LoggingFilter log
+INFO: 1 * Sending client request on thread main
+1 &gt; PUT http://localhost:9998/wishlists/wishlistId
+1 &gt; Content-Type: application/json
+
+Dec 17, 2017 12:08:14 AM org.glassfish.jersey.filter.LoggingFilter log
+INFO: 1 * Client response received on thread main
+1 &lt; 500
+1 &lt; Connection: close
+1 &lt; Content-Length: 0
+1 &lt; Date: Sun, 17 Dec 2017 05:08:14 GMT
+
+</system-err>
+  </testcase>
+  <testcase classname="com.sample.wishlistDemo.api.generated.DefaultWishlistsResourceTest" name="testGet" time="1.338"/>
+  <testcase classname="com.sample.wishlistDemo.api.generated.DefaultWishlistsResourceTest" name="testPostWithWishlist" time="1.221">
+    <failure message="Response does not have expected response code expected:&lt;201&gt; but was:&lt;500&gt;" type="java.lang.AssertionError">java.lang.AssertionError: Response does not have expected response code expected:&lt;201&gt; but was:&lt;500&gt;
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:834)
+	at org.junit.Assert.assertEquals(Assert.java:645)
+	at com.sample.wishlistDemo.api.generated.DefaultWishlistsResourceTest.testPostWithWishlist(DefaultWishlistsResourceTest.java:49)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</failure>
+    <system-err>Dec 17, 2017 12:08:17 AM org.glassfish.jersey.filter.LoggingFilter log
+INFO: 1 * Sending client request on thread main
+1 &gt; POST http://localhost:9998/wishlists
+1 &gt; Content-Type: application/json
+
+Dec 17, 2017 12:08:17 AM org.glassfish.jersey.filter.LoggingFilter log
+INFO: 1 * Client response received on thread main
+1 &lt; 500
+1 &lt; Connection: close
+1 &lt; Content-Length: 0
+1 &lt; Date: Sun, 17 Dec 2017 05:08:17 GMT
+
+</system-err>
+  </testcase>
+  <testcase classname="com.sample.wishlistDemo.api.generated.DefaultWishlistsResourceTest" name="testDeleteByWishlistId" time="0.908">
+    <failure message="Response does not have expected response code expected:&lt;204&gt; but was:&lt;500&gt;" type="java.lang.AssertionError">java.lang.AssertionError: Response does not have expected response code expected:&lt;204&gt; but was:&lt;500&gt;
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:834)
+	at org.junit.Assert.assertEquals(Assert.java:645)
+	at com.sample.wishlistDemo.api.generated.DefaultWishlistsResourceTest.testDeleteByWishlistId(DefaultWishlistsResourceTest.java:89)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.internal.runners.statements.RunAfters.evaluate(RunAfters.java:27)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</failure>
+    <system-err>Dec 17, 2017 12:08:18 AM org.glassfish.jersey.filter.LoggingFilter log
+INFO: 1 * Sending client request on thread main
+1 &gt; DELETE http://localhost:9998/wishlists/wishlistId
+
+Dec 17, 2017 12:08:18 AM org.glassfish.jersey.filter.LoggingFilter log
+INFO: 1 * Client response received on thread main
+1 &lt; 500
+1 &lt; Connection: close
+1 &lt; Content-Length: 0
+1 &lt; Date: Sun, 17 Dec 2017 05:08:17 GMT
+
+</system-err>
+  </testcase>
+  <testcase classname="com.sample.wishlistDemo.api.generated.DefaultWishlistsResourceTest" name="testGetByWishlistId" time="0.798"/>
+</testsuite>
