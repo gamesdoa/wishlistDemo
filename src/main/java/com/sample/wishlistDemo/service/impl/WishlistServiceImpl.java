@@ -17,44 +17,79 @@ public class WishlistServiceImpl implements WishlistService {
 	private WishlistDao wishlistDao;
 	@Override
 	public List<Wishlist> getWishlistsByUserId(String userId) {
-		// TODO Auto-generated method stub
-		return null;
+		return wishlistDao.getWishlistsByUserId(userId);
 	}
 
 	@Override
 	public boolean saveWishlistByInfo(String userId, Wishlist wishlist) {
-		// TODO Auto-generated method stub
-		return false;
+		List<Wishlist> list = getWishlistsByUserId(userId);
+		for (Wishlist item : list) {
+			if(item.getTitle().equals(wishlist.getTitle())){
+				return wishlistDao.updateWishlistByInfo(item.getId() , wishlist);
+			}
+		}
+
+		return wishlistDao.saveWishlistByInfo(wishlist);
 	}
 
 	@Override
 	public Wishlist getByWishlistId(String userId, String wishlistId) {
-		// TODO Auto-generated method stub
-		return null;
+		Wishlist wishlist = wishlistDao.getByWishlistId(wishlistId);
+		if(wishlist.getOwner().equals(userId)){
+			return wishlist;
+		} else {
+			return null;
+		}
 	}
 
 	@Override
 	public boolean updateWishlistByInfo(String userId, String wishlistId, Wishlist wishlist) {
-		// TODO Auto-generated method stub
-		return false;
+		Wishlist wishlistDb = getByWishlistId(userId, wishlistId);
+		if(wishlistDb == null || !wishlistDb.getOwner().equals(userId))
+			return false;
+
+		return wishlistDao.updateWishlistByInfo(wishlistId , wishlist);
 	}
 
 	@Override
 	public boolean deleteWishlistById(String userId, String wishlistId) {
-		// TODO Auto-generated method stub
-		return false;
+		Wishlist wishlist = getByWishlistId(userId, wishlistId);
+		if(wishlist == null || !wishlist.getOwner().equals(userId))
+			return false;
+
+		return wishlistDao.deleteWishlistById(wishlistId);
 	}
 
 	@Override
 	public List<WishlistItem> getWishlistItemsByWishlistId(String userId, String wishlistId) {
-		// TODO Auto-generated method stub
-		return null;
+		Wishlist wishlist = getByWishlistId(userId, wishlistId);
+		if(wishlist == null || !wishlist.getOwner().equals(userId))
+			return null;
+
+		return wishlist.getItems();
 	}
 
 	@Override
 	public boolean saveWishlistItemByInfo(String userId, String wishlistId, WishlistItem wishlistItem) {
-		// TODO Auto-generated method stub
-		return false;
+		Wishlist wishlist = getByWishlistId(userId, wishlistId);
+		if(wishlist == null || !wishlist.getOwner().equals(userId))
+			return false;
+		List<WishlistItem> items = wishlist.getItems();
+
+		boolean hes = false;
+		for (WishlistItem wli: items) {
+			if(wli.getProduct().equals(wishlistItem.getProduct())){
+				wli.setAmount(wishlistItem.getAmount());
+				wli.setNote(wishlistItem.getNote());
+				hes = true;
+			}
+		}
+
+		if(!hes){
+			wishlist.getItems().add(wishlistItem);
+		}
+
+		return updateWishlistByInfo(userId , wishlistId , wishlist);
 	}
 
 }
